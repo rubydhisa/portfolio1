@@ -1,0 +1,129 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(202, 189, 189, 0.699);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+nav ul li a.active {
+    font-weight: bold;
+}
+
+section {
+    padding: 40px 0;
+}
+
+.about-content, .education-content, .project-content, .contact-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.about-content {
+    flex-direction: row;
+}
+
+.about-content img {
+    max-width: 50%;
+    height: auto;
+}
+
+.education-content div, .project-content div, .contact-content div {
+    background: #1e1e1e;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.project-link {
+    display: inline-block;
+    margin: 10px 0;
+    padding: 10px 15px;
+    background: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+
+}
+.project-link:hover {
+    transform: scale(1.1); /* Zoom in effect */
+}
+
+
+
+.project-link:hover {
+    background: #0056b3;
+}
+
+@media (min-width: 600px) {
+    .about-content {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .education-content {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .education-content div {
+        flex: 1;
+        margin: 0 10px;
+    }
+
+    .project-content {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .project-content div {
+        flex: 1;
+        margin: 0 10px;
+    }
+
+    .contact-content {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .contact-content div {
+        flex: 1;
+        margin: 0 10px;
+    }
+}
